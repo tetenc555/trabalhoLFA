@@ -2,9 +2,7 @@
 
 ## Sobre o projeto
 
-Este projeto é um protótipo inicial de um framework para análise léxica, desenvolvido como trabalho acadêmico para a disciplina de **Linguagens Formais e Autômatos**. A proposta é estudar, na prática, como um Autômato Finito Determinístico (AFD) pode reconhecer sequências de caracteres e identificar tokens.
-
-O projeto também será aplicado à web. A intenção é evoluir o protótipo para que a análise léxica possa ser usada em uma aplicação web, permitindo informar um texto e visualizar os tokens reconhecidos ou a ocorrência de erros léxicos.
+Este projeto é um protótipo inicial de um framework para análise léxica, desenvolvido como trabalho acadêmico para a disciplina de **Linguagens Formais e Autômatos**. A proposta é estudar, na prática, como um Autômato Finito Determinístico (AFD) pode reconhecer sequências de caracteres e identificar tokens. O projeto também será aplicado à web. 
 
 ## Tarefas realizadas
 
@@ -36,7 +34,3 @@ O projeto também será aplicado à web. A intenção é evoluir o protótipo pa
 - [ ] **Tratamento de Fim de Arquivo (EOF) no meio de um token:** No `while (p != null)`, se o arquivo acabar enquanto o autômato está no meio de um token válido (mas ainda não atingiu um estado final), o código simplesmente retorna `"fim"` em vez de acusar um erro léxico (ex: uma string ou comentário aberto que nunca foi fechado antes do EOF).
 - [ ] **Integração com Tabela de Símbolos:** Falta inserir ou consultar identificadores e literais em uma Tabela de Símbolos para otimizar o uso de memória nas fases seguintes da compilação.
 - [ ] Integrar o analisador a uma aplicação web, com entrada de texto e exibição dos tokens e erros.
-
-## Observação
-
-Este repositório representa a etapa inicial do trabalho. A aplicação web é um objetivo futuro do projeto; ela ainda não faz parte da implementação atual.
